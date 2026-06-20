@@ -1,3 +1,14 @@
+# 🧪 Synthetic Hyper-Alloy Matrix & Structural Bulkhead Engineering
+
+<p align="center">
+  <img src="image_75d7145e.png" width="100%" alt="Microstructure Analysis: Crystal Grains and Weak Structural Boundaries">
+</p>
+
+This file documents the metallurgical blueprint for the multi-principal element hyper-alloy (MPEHA) "atomic soup mix" used to construct the feather-light, ultra-high-strength lifting body framework of the vessel.
+
+---
+
+
 # 🧪 Synthetic Hyper-Alloy Matrix & Fuselage Structural Engineering
 
 This file documents the metallurgical blueprint for the multi-principal element hyper-alloy (MPEHA) "soup mix" used to construct the feather-light, ultra-high-strength lifting body of the Cadillac Halo.
