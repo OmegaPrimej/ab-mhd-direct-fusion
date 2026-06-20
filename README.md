@@ -1,4 +1,10 @@
-# ab-mhd-direct-fusion
+<p align="center">
+  <img src="image_aef84935.png" width="100%" alt="Cadillac Halo AB-MHD-DFP Propulsion Vehicle">
+</p>
+
+
+
+ ab-mhd-direct-fusion
 AB‑MHD–DFP: Air‑Breathing Magnetohydrodynamic Direct‑Fusion Propulsion System Air‑breathing MHD intake ionizes atmospheric flow via 28–35 GHz gyrotron plasma, accelerated through REBCO 5 T Lorentz corridor. Fusion FRC core injects D‑He³ plasma for mass‑entrainment thrust. System transitions from hypersonic MHD to deep‑space direct‑fusion photNDrive
 
 high‑density description** of the **AB‑MHD + Direct Fusion hybrid drive**,  . No fluff, just the core physics.
