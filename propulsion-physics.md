@@ -211,3 +211,70 @@ The Hafnium Carbide (HfC) wall electrodes inside the Lorentz Corridor face extre
 * The Idea: We integrate a Seebeck-type quantum-dot thermoelectric matrix directly behind the HfC segmented plates.
 * The Physics: The extreme temperature delta between the white-hot inner corridor walls and the cryogenic liquid Deuterium lines on the outside creates a massive electrical voltage potential. This shunts gigawatts of wasted thermal energy straight back into the cockpit's REBCO superconducting shield systems or feeds it directly into the gyrotron pulse-width modulation loop, achieving near-closed-loop energy efficiency.
 
+# 🔬 Advanced Propulsion Systems Physics & Vector Topography
+
+This document contains the exact mathematical control equations, non-linear fluid dynamics models, and system schematics mapping out the hypersonic pre-ionization envelope, electro-acoustic plasma coupling, and thermoelectric power recycling for the AB-MHD-DFP drive architecture.
+
+---
+
+## 1. System Infrastructure Blueprint
+
+```text
+=================================================================================================
+             AB-MHD-DFP HYPERSONIC ATMOSPHERIC TRANSITION GRID (CROSS-SECTION)
+=================================================================================================
+
+ [ HYPERSONIC INTAKE ] ────────────────────────────────────────────────────────► [ TO FUSION CORE ]
+                             │                      │                       │
+      Phase 2.1a             │      Phase 2.1b      │       Phase 2.2       │
+   Laser Filamentation       │  PWM Gyrotron Loop   │  5T REBCO Lorentz     │
+    Pre-Ionization Grid      │   (ECRH Heating)     │   Corridor (E x B)    │
+                             │                      │                       │
+   ┌──────────────────────┐  │  ┌────────────────┐  │  ┌─────────────────┐  │
+   │ Femtosecond Laser    │  │  │ 28-35 GHz GaN  │  │  │ Upper Segmented │  │
+   │ Array (Kerr-Focus)   │  │  │ Gyrotron Arrays│  │  │ HfC Electrode   │  │
+   └──────────┬───────────┘  │  └───────┬────────┘  │  └────────┬────────┘  │
+              │              │          │           │           │ (+ Vdc)   │
+ ═════════════▼══════════════╪══════════▼═══════════╪═══════════▼═══════════╪═══════════════════
+  ► ► ► [ Incoming Air ] ──► │  [ Seeded Gas ] ───► │  [ Dense Plasma ] ───►│ [ Relativistic ]
+   (Neutral Gas, Mach 5+)    │ (Filament Paths)     │  (Ne ≈ 10¹⁹ m⁻³)      │   Thrust Jet
+ ════════════════════════════╪══════════════════════╪═══════════════════════╪═══════════════════
+```
+
+---
+
+## 2. Hall-Effect Thermoelectric Energy Scavenger Circuit
+
+To manage the extreme 3,200°C boundary thermal loads acting on the segmented Hafnium Carbide (HfC) wall electrodes, a Seebeck quantum-dot thermoelectric matrix is embedded beneath the acceleration channel skin.
+
+### 2.1 Thermal-to-Electric Current Density Vector
+The extreme temperature differential ($\Delta T$) between the white-hot inner channel wall and the cryogenic liquid Deuterium cooling lines creates a massive electromotive force, governed by the generalized Ohm's law with thermoelectric and Hall effects:
+
+$$\mathbf{J} = \sigma_e \left( \mathbf{E} + \mathbf{v} \times \mathbf{B} - S \nabla T \right) - \frac{\Omega}{B} (\mathbf{J} \times \mathbf{B})$$
+
+Where:
+*   $\mathbf{J}$: Generated net output current density vector recycled back into the vehicle power grid.
+*   $S$: Seebeck coefficient matrix of the quantum-dot Hafnium Carbide infrastructure ($S \approx -450 \, \mu\text{V/K}$).
+*   $\nabla T$: Temperature gradient vector establishing the cross-bulkhead thermal jump.
+*   $\Omega$: Local dimensionless Hall parameter ($\Omega = \omega_{ce} \tau_e$) driving the cross-channel steering vector.
+
+---
+
+## 3. Laser Filamentation Pre-Ionization Framework
+
+When entering the hypersonic flight regime ($M \ge 5.0$), oncoming neutral atmospheric boundary layer gases encounter localized laser filamentation seeding fields before arriving at the primary gyrotron loops.
+
+### 3.1 Non-Linear Laser-Gas Seeding Vector
+The laser grid propagation creates ionization pathways through a balance of optical Kerr self-focusing and plasma defocusing. This mechanism is governed by the Non-Linear Schrödinger Equation (NLSE):
+
+$$\nabla_{\perp}^2 \mathbf{E} + 2ik_0 \frac{\partial \mathbf{E}}{\partial z} + 2k_0^2 n_2 \vert{}\mathbf{E}\vert{}^2 \mathbf{E} - k_0 \sigma (i + \omega_0 \tau_c) N_e \mathbf{E} - i k_0 \beta_K \vert{}\mathbf{E}\vert{}^{2K-2} \mathbf{E} = 0$$
+
+---
+
+## 4. Inverse-Dimpled Electro-Acoustic Resonator Topology
+
+Low-altitude hovering and initial acceleration utilize a concave interior matrix embedded with negative hemispherical dimples to capture, control, and pocket plasma injections.
+
+### 4.1 Non-Linear Electro-Acoustic Momentum Vector
+$$\rho_0 \frac{\partial \mathbf{v}}{\partial t} + \partial p_1 = q N_e (\mathbf{E} + \mathbf{v} \times \mathbf{B}) - \nabla \cdot \mathbf{\tau}_{acoustic}$$
+
