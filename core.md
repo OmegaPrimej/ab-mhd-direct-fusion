@@ -200,3 +200,29 @@ $$f_{res} = \frac{v_{sound}}{2\pi} \sqrt{\frac{A}{V \cdot L'}}$$
 *   **Vortex-Induced Resonance Amplification:** Instead of causing drag, the controlled fluid turbulence constructively drives the secondary acoustic frequencies, translating low-altitude atmospheric pressure into a stable, non-mechanical levitation cushion.
 
   
+---
+
+# Unified Multiphase Propulsion Transition Matrix (Master Control Algorithm)
+
+## 1. The Dynamic Phase Handshake Law
+The vehicle operates across five non-mechanical propulsion boundaries. To prevent localized thermal shock or thrust drop during transitions, a master state-space transition matrix ($\mathbf{\Psi}$) dynamically balances power distribution between the Acoustic Resonator, the AB-MHD Drive, the Fusion Core, and the Photonic Nozzle.
+
+### 1.1 Master State-Space Scaling Tensor
+The total instantaneous thrust vector ($\mathbf{F}_{total}$) is calculated by scaling each system's operational envelope through an automated control feedback loop:
+
+$$\mathbf{F}_{total}(z, M) = \alpha(z, M)\mathbf{F}_{acoustic} + \beta(z, M)\mathbf{F}_{MHD} + \gamma(z, M)\mathbf{F}_{fusion} + \sigma(z)\mathbf{F}_{photon}$$
+
+Where the scaling scalar variables are strictly governed by altitude ($z$) and Mach velocity ($M$):
+
+*   **$\alpha(z, M)$ (Electro-Acoustic Coefficient):** Scales from $1.0 \to 0.0$. Maximized at $z < 50,000\text{ ft}$ and $M < 1.2$. Triggers plasma injection into the internal concave matrix.
+*   **$\beta(z, M)$ (MHD Lorentz Corridor Coefficient):** Scales from $0.0 \to 1.0 \to 0.0$. Activated at $50,000\text{ ft} \le z \le 120,000\text{ ft}$ and $1.5 \le M \le 12.0$. Controls the 5 Tesla REBCO coil flux paths.
+*   **$\gamma(z, M)$ (Direct Fusion Core Entrainment):** Scales from $0.0 \to 1.0$. Initiated at $M > 8.0$ as a hybrid atmospheric/D-He³ mass-entrainment system, locking into full clean fusion mode as atmospheric density ($\rho_{atm} \to 0$).
+*   **$\sigma(z)$ (Relativistic Photonic Scaling Factor):** Evaluates to $1.0$ strictly in deep vacuum ($z > 400,000\text{ ft}$), shifting the electron-density mirrors into a pure relativistic radiation exhaust state.
+
+---
+
+## 2. Real-Time Variable Control Loops & Diagnostics
+To maintain a continuous Magnetic Slip ($s$) between $0.1$ and $0.3$ during hypersonic climb, the flight computer adjusts voltage frequencies across the segmented Hafnium Carbide (HfC) wall electrodes.
+
+*   **Boundary Layer Interaction:** If localized thermal sensors detect boundary layers approaching the critical $3,200^\circ\text{C}$ structural limit, the system automatically dials the gyrotron pulse-width modulation down to a $15\%$ duty cycle. 
+*   **Steering Vector Mapping:** Directional control vectors are computed by running asymmetric current densities through the left and right REBCO coils. This tilts the exhaust plasma stream by up to $25^\circ$ without a single moving mechanical flap.
